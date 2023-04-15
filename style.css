@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Futura PT";
+  src: url("/assets/fonts/futura-pt-cdnfonts/FuturaCyrillicExtraBold.ttf");
+}
+
+body {
+  background-color: rgb(176, 176, 204);
+  background-repeat: no-repeat;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  max-width: 100px;
+  margin-top: 20px;
+  margin-left: 60px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  padding-left: 80px;
+}
+
+@media screen and (max-width: 424px) {
+  .block {
+    display: none;
+    background-color: aqua;
+    width: 200px;
+    
+    }
+  }
+
+@media screen and (min-width: 424px) {
+  .logo2 {
+    
+    background-color: rgb(194, 207, 15);
+    }
+  }
+
+
+
