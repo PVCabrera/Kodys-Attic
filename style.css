@@ -1,7 +1,13 @@
 @font-face {
   font-family: "Futura PT";
   src: url("/assets/fonts/futura-pt-cdnfonts/FuturaCyrillicBook.ttf");
+
+  font-family: "Open-Sans";
+  src: url("/assets/fonts/OpenSans/OpenSans-Regular.ttf");
 }
+
+
+
 
 body {
   background-color: rgb(176, 176, 204);
@@ -9,27 +15,46 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.logo {
-  max-width: 150px;
-  margin-top: 20px;
+img {
+  display: inline-bl;
+  max-width: 175px;
+  
+}
+
+h1 {
+  display: inline-flex;
+  background-color: aqua;
+  padding-left: 40px;
+}
+
+h2{
+  display: flex;
+  margin-left: 600px;
+  background-color: aqua;
+  padding-top: 100px;
 }
 
 nav {
-  display: flex;
+  display: flex inline-block;
   flex-direction: column;
   padding-left: 80px;
   font-family: 'Futura PT';
   font-size: larger;
 }
 
+h1 {
+  display: inline-block;
+  margin-left: 225px;
+}
 
 .block {
+  display: inline-block;
   max-width: 225px;
   padding-top: 20px;
-  padding-right: 25px;
-  padding-left: 15px;
+  padding-right: 20px;
+  padding-left: 30px;
   padding-bottom: 650px;
-  background-color: chocolate;
+  background-color: #19040470;
 }
 
 @media screen and (max-width: 824px) {
