@@ -7,31 +7,57 @@
 }
 
 
-
-
 body {
   background-color: rgb(176, 176, 204);
   background-image: url(assets/images/BFP3.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.main-wrap {
+  display: flex;
+  position: relative;
+}
+
+.main-wrap .block {
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  background: #00000080;
+  padding: 20px 0;
+}
+
+.main-wrap .block h2 {
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.main-wrap .block ul li {
+  padding: 20px;
+}
+
+.main-wrap .block ul li:hover a {
+  background: #eee7e735;
+}
+
+.main-wrap .block .social-med a {
+  display: block;
+  width: 40px;
+  background: #721313;
+}
+
 img {
-  display: inline-bl;
   max-width: 175px;
   
 }
 
-h1 {
-  display: inline-flex;
-  background-color: aqua;
-  padding-left: 40px;
+h1 {  
 }
+  
 
 h2{
-  display: flex;
-  margin-left: 600px;
-  background-color: aqua;
-  padding-top: 100px;
+  
 }
 
 nav {
@@ -45,16 +71,6 @@ nav {
 h1 {
   display: inline-block;
   margin-left: 225px;
-}
-
-.block {
-  display: inline-block;
-  max-width: 225px;
-  padding-top: 20px;
-  padding-right: 20px;
-  padding-left: 30px;
-  padding-bottom: 650px;
-  background-color: #19040470;
 }
 
 @media screen and (max-width: 824px) {
