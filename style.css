@@ -6,6 +6,10 @@
   src: url("/assets/fonts/OpenSans/OpenSans-Regular.ttf");
 }
 
+img {
+  max-width: 100px;
+  margin: 25px 25px;
+}
 
 body {
   background-color: rgb(176, 176, 204);
@@ -18,65 +22,66 @@ body {
   display: flex;
   position: relative;
 }
-
+/*Change Text font*/
 .main-wrap .block {
   position: fixed;
-  width: 250px;
+  width: 240px;
   height: 100%;
   background: #00000080;
-  padding: 20px 0;
-}
-
-.main-wrap .block h2 {
+  padding: 10px 0;
   color: #fff;
   text-transform: uppercase;
   margin-bottom: 25px;
 }
-
+/*shift text to right or left in nav and resize tabs with padding*/
 .main-wrap .block ul li {
-  padding: 20px;
+  padding: 10px 0 10px;
 }
 
 .main-wrap .block ul li:hover a {
   background: #eee7e735;
 }
 
+.main-wrap .block .social-med {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  transform: translate(-50%);
+}
+
 .main-wrap .block .social-med a {
   display: block;
   width: 40px;
-  background: #721313;
+  background-color: none;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin: 0 5px;
+  color: #bdb8d7;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
-img {
-  max-width: 175px;
-  
+.main-wrap .home-cont {
+  width: 100%;
+  color: aliceblue;
+  margin-left: 300px;
+}
+/*Header Text*/
+.main-wrap .home-cont .header {
+  padding: 40px;
+  margin-left: 20px;
 }
 
-h1 {  
-}
-  
-
-h2{
-  
+.main-wrap .home-cont .site-info {
+  padding: 60px;
 }
 
-nav {
-  display: flex inline-block;
-  flex-direction: column;
-  padding-left: 80px;
-  font-family: 'Futura PT';
-  font-size: larger;
-}
 
-h1 {
-  display: inline-block;
-  margin-left: 225px;
-}
 
 @media screen and (max-width: 824px) {
   .block {
     display: none;
   }
 }
-
-
