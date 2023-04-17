@@ -72,6 +72,15 @@ body {
   width: 100%;
   margin-left: 300px;
 }
+/*Home Page Icons*/
+.main-wrap .hm-pg-icons a {
+  display: flex;
+  flex-direction: row;
+  justify-content: ;
+  padding: 15px;
+  color: #fff
+}
+
 
 /*Motto Text CSS*/
 .main-wrap .home-cont .header {
