@@ -9,6 +9,7 @@
 img {
   max-width: 100px;
   margin: 25px 25px;
+  
 }
 
 body {
@@ -22,6 +23,7 @@ body {
   display: flex;
   position: relative;
 }
+
 /*Change Text font*/
 .main-wrap .block {
   position: fixed;
@@ -33,6 +35,7 @@ body {
   text-transform: uppercase;
   margin-bottom: 25px;
 }
+
 /*shift text to right or left in nav and resize tabs with padding*/
 .main-wrap .block ul li {
   padding: 10px 0 10px;
@@ -63,25 +66,55 @@ body {
   border-top-left-radius: 5px;
 }
 
+/*Motto Text Orient.*/
 .main-wrap .home-cont {
   width: 100%;
-  color: aliceblue;
   margin-left: 300px;
 }
-/*Header Text*/
+
+/*Motto Text CSS*/
 .main-wrap .home-cont .header {
+  display: flex;
   padding: 40px;
   margin-left: 20px;
+  color: #fff;
+  font-family: "Futura PT";
+  font-size: 70px;
 }
 
+/*Paragraph Text*/
 .main-wrap .home-cont .site-info {
-  padding: 60px;
+  padding: 70px;
+  margin-right: 0;
+  font-size: medium;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.532);
+  border-style: solid;
+  border-color: #fff;
+  position: absolute;
+  margin: 300px 0 150px 600px;
 }
 
-
-
+/*Mobile Version*/
 @media screen and (max-width: 824px) {
+  body{
+    max-width: 350px;
+  }
+
   .block {
     display: none;
   }
+
+  .main-wrap {
+  }
+
+  .main-wrap .home-cont .header {
+    padding-right: 60px;
+  }
+  .main-wrap .home-cont .site-info {
+    max-width: 300px;
+    margin: 0 0 0 0;
+  }
+
+
 }
