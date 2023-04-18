@@ -71,8 +71,8 @@ body {
 .main-wrap .home-cont {
   width: 100%;
   margin-left: 300px;
+  padding-left: 15px;
 }
-
 
 /*Home Page Icons*/
 .main-wrap .hm-pg-icons a {
@@ -88,19 +88,25 @@ body {
 .main-wrap .home-cont .header {
   display: flex;
   padding: 40px;
+  padding-left: 0px;
   padding-top: 25px;
-  margin-left: 20px;
   color: #fff;
   font-family: "Futura PT";
   font-size: 70px;
+}
+
+.main-wrap .home-cont .btn {
+  font-family: 'Futura PT';
 }
 
 .gradbox{
   background-color: rgba(0, 0, 0, 0);
   border-style: solid;
   border-color: #fff;
-  margin-right: 250px;
-  padding-top: 15px;
+  margin-right: 100px;
+  margin-left: 50px;;
+  padding: 15px;
+  margin-top: 800px;
 }
 
 /*Paragraph Text*/
@@ -108,12 +114,76 @@ body {
   padding: 50px;
   font-size: medium;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.661);
   border-style: solid;
   border-color: #fff;
-  margin: 15px 0px 0px;
-  padding-right: 30px;
-  padding-left: 20px;;
+}
+
+.main-wrap .home-cont .k-letter {
+  font-size: 60px;
+  color: rgb(106, 122, 122);
+  line-height: 0%;
+  padding-right:5px;
+}
+
+footer {
+  background-color: #02000089;
+  padding: 20px;
+  text-align: center;
+  margin-left: 15rem;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  width: 25%;
+  text-align: left;
+}
+
+.footer-links h3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footer-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 5px;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Open-Sans";
+}
+
+.footer-logo {
+  text-align: center;
+  max-width: 8rem;
+}
+
+.footer-logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer-copyright {
+  width: 50%;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
 }
 
 /*Mobile Version*/
@@ -125,6 +195,10 @@ body {
 
   .block {
     display: none;
+  }
+  
+  footer{
+    margin-left: auto;
   }
 
   .main-wrap .home-cont {
