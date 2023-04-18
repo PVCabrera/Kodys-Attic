@@ -16,7 +16,6 @@ body {
   background-color: rgb(2, 2, 23);
   background-image: url(assets/images/BFP3.png);
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -74,6 +73,7 @@ body {
   margin-left: 300px;
 }
 
+
 /*Home Page Icons*/
 .main-wrap .hm-pg-icons a {
   display: flex;
@@ -95,15 +95,25 @@ body {
   font-size: 70px;
 }
 
+.gradbox{
+  background-color: rgba(0, 0, 0, 0);
+  border-style: solid;
+  border-color: #fff;
+  margin-right: 250px;
+  padding-top: 15px;
+}
+
 /*Paragraph Text*/
 .main-wrap .home-cont .site-info {
   padding: 50px;
   font-size: medium;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.532);
+  background-color: rgba(0, 0, 0, 0);
   border-style: solid;
   border-color: #fff;
-  margin: 50px 0 0 50px;
+  margin: 15px 0px 0px;
+  padding-right: 30px;
+  padding-left: 20px;;
 }
 
 /*Mobile Version*/
