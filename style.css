@@ -9,14 +9,15 @@
 img {
   max-width: 100px;
   margin: 25px 25px;
-  
+
 }
 
 body {
   background-color: rgb(2, 2, 23);
   background-image: url(assets/images/BFP3.png);
   background-size: cover;
-  background-repeat:no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
@@ -72,25 +73,28 @@ body {
   width: 100%;
   margin-left: 300px;
 }
+
 /*Home Page Icons*/
 .main-wrap .hm-pg-icons a {
   display: flex;
-  flex-direction: row;
-  justify-content: ;
-  padding: 15px;
+  display: inline-block;
+  float: right;
+  padding-right: 20px;
+  margin-top: 15px;
   color: #fff
 }
-
 
 /*Motto Text CSS*/
 .main-wrap .home-cont .header {
   display: flex;
   padding: 40px;
+  padding-top: 25px;
   margin-left: 20px;
   color: #fff;
   font-family: "Futura PT";
   font-size: 70px;
 }
+
 /*Paragraph Text*/
 .main-wrap .home-cont .site-info {
   padding: 50px;
@@ -101,11 +105,12 @@ body {
   border-color: #fff;
   margin: 50px 0 0 50px;
 }
+
 /*Mobile Version*/
 @media screen and (max-width: 824px) {
-  body{
-   max-width: fit-content;
-   background-color: black;
+  body {
+    max-width: fit-content;
+    background-color: black;
   }
 
   .block {
@@ -119,10 +124,12 @@ body {
   .main-wrap .home-cont .header {
     padding-right: 60px;
   }
+
   .main-wrap .home-cont .site-info {
     display: flex;
     margin-right: 30px;
   }
+
   mob-nav {
     max-width: 600px;
   }
