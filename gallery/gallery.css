@@ -67,26 +67,9 @@ body {
   border-top-left-radius: 5px;
 }
 
-/*Motto Text Orient.*/
-.main-wrap .home-cont {
-  width: 100%;
-  margin-left: 300px;
-  padding-left: 15px;
-}
-
-/*Home Page Icons*/
-.main-wrap .hm-pg-icons a {
+.main-wrap .home-cont .main-ck-word {
   display: flex;
-  display: inline;
-  float: right;
-  padding-right: 20px;
-  margin-top: 15px;
-  color: #fff
-}
-
-/*Motto Text CSS*/
-.main-wrap .home-cont .header {
-  display: flex;
+  margin-left: auto;
   padding: 40px;
   padding-left: 0px;
   padding-top: 25px;
@@ -95,50 +78,15 @@ body {
   font-size: 70px;
 }
 
-.main-wrap .home-cont .btn {
-  font-family: 'Futura PT';
-}
-
-/*Paragraph Text*/
-.main-wrap .home-cont .site-info {
-  padding: 50px;
-  font-size: medium;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.661);
-  border-style: solid;
-  border-color: #fff;
-}
-
-.main-wrap .home-cont .k-letter {
-  font-size: 60px;
-  color: rgb(106, 122, 122);
-  line-height: 0%;
-  padding-right:5px;
-}
-.bg-check-pg {
+/*Home Page Icons*/
+.main-wrap .hm-pg-icons a {
   display: flex;
-  margin: 20px;
-  margin-left: 0px;
-  padding-left: 15px;
-  background-color: rgba(38, 25, 25, 0.537);
-  max-width: 1200px;
-  min-width:400px
+  display: inline-block;
+  float: right;
+  padding-right: 20px;
+  margin-top: 15px;
+  color: #fff
 }
-
-.main-wrap .cart {
-  padding-bottom: 3rem;
-}
-
-.main-wrap h4 {
-  color: #fff;
-}
-
-.main-wrap .bg-check-pg {
-padding: 20px;
-color: #fff;
-margin-bottom: 6rem;
-}
-
 footer {
   background-color: #02000089;
   padding: 20px;
@@ -209,19 +157,9 @@ footer {
   .block {
     display: none;
   }
-
-  footer {
-    margin-left: 0;
-    width: 100vw;
-    height: 50vw;
-  }
-
-  .footer-logo {
-    margin-right: 3rem;
-  }
-    
-  .container {
-    position: absolute;
+  
+  footer{
+    margin-left: auto;
   }
 
   .main-wrap .home-cont {
