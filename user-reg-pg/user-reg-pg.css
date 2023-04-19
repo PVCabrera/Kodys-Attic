@@ -1,0 +1,28 @@
+body {
+  background-image: url(/assets/images/DrawerInsert.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no repeat;
+}
+/* Bg for form */
+.container {
+  background-color: rgba(0, 0, 0, 0.479);
+  max-width: 600px;
+  padding: 3rem;
+  margin-top: 3rem;
+  padding-top: 250px;
+  color: #ffffff;
+}
+/* Spacing on bubbles */
+form .form-group {
+  padding-top: 24px;
+}
+/* Button Spacing */
+form .btn {
+  margin-top: 20px ;
+}
+/* Logo */
+form .logo {
+  max-width: 250px;
+  margin-left: 125px;
+}
