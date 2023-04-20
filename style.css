@@ -6,7 +6,7 @@
   src: url("/assets/fonts/OpenSans/OpenSans-Regular.ttf");
 }
 
-img {
+.main-logo {
   max-width: 100px;
   margin: 25px 25px;
 
@@ -18,6 +18,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  min-height: 100vh;
 }
 
 .main-wrap {
@@ -77,11 +78,15 @@ body {
 /*Home Page Icons*/
 .main-wrap .hm-pg-icons a {
   display: flex;
-  display: inline-block;
-  float: right;
+  display: inline;
   padding-right: 20px;
   margin-top: 15px;
   color: #fff
+}
+
+.hm-pg-icons {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /*Motto Text CSS*/
@@ -95,35 +100,22 @@ body {
   font-size: 70px;
 }
 
+
+
 .main-wrap .home-cont .btn {
   font-family: 'Futura PT';
+  background-color: #e8e0e0;
 }
 
-.gradbox{
-  background-color: rgba(0, 0, 0, 0);
-  border-style: solid;
-  border-color: #fff;
-  margin-right: 100px;
-  margin-left: 50px;;
-  padding: 15px;
-  margin-top: 800px;
-}
-
-/*Paragraph Text*/
-.main-wrap .home-cont .site-info {
-  padding: 50px;
-  font-size: medium;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.661);
-  border-style: solid;
-  border-color: #fff;
+h2{
+  margin-top: 50rem;
 }
 
 .main-wrap .home-cont .k-letter {
   font-size: 60px;
   color: rgb(106, 122, 122);
   line-height: 0%;
-  padding-right:5px;
+  padding-right: 5px;
 }
 
 footer {
@@ -131,6 +123,7 @@ footer {
   padding: 20px;
   text-align: center;
   margin-left: 15rem;
+  margin-top: auto;
 }
 
 .container {
@@ -196,9 +189,10 @@ footer {
   .block {
     display: none;
   }
-  
-  footer{
+
+  footer {
     margin-left: auto;
+    margin-top: auto;
   }
 
   .main-wrap .home-cont {
