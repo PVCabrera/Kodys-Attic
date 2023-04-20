@@ -74,8 +74,9 @@ body {
 /*Motto Text Orient.*/
 .main-wrap .home-cont {
   width: 100%;
-  margin-left: 300px;
+  margin-left: 14rem;
   padding-left: 15px;
+  margin-right: 0px;
 }
 
 /*Home Page Icons controls*/
@@ -94,24 +95,126 @@ body {
 .main-wrap .home-cont .header {
   display: flex;
   padding: 40px;
-  padding-left: 0px;
+  
   padding-top: 0px;
   color: #fff;
   font-family: "Futura PT";
   font-size: 70px;
 }
 
-.sizing-img {
-  min-width: 15rem;
-  max-width: 15rem;
-} 
 
-.main-furns {
-  background-color: aqua;
+.imgs-page {
   display: flex;
   justify-content: space-around;
+  background-color: aqua;
+  padding: 30px;
+  transition: .5s;
   padding: 20px;
-} 
+}
+
+.imgs-page#blur.active {
+  filter: blur(25px);
+  pointer-events: none;
+  user-select: none;
+}
+.imgs-page.content {
+  position: relative;
+  max-width: 800px;
+}
+h5 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.imgs-page.content img {
+  max-width: 100%;
+  display: block;
+}
+
+.img-a {
+  position:relative;
+  padding: 5px 20px;
+  display: block;
+  margin: 5px 6rem 30px 6rem;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background: #111;
+  border-radius:25px;
+}
+
+#popup {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  padding: 50px;
+  box-shadow: 0 5px 30px rgba(0,0,0,.30);
+  background: #fff;
+  visibility: hidden;
+  opacity: 0%;
+  transition: 0.5s;
+}
+
+#popup.active {
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+#popup2 {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  padding: 50px;
+  box-shadow: 0 5px 30px rgba(0,0,0,.30);
+  background: #fff;
+  visibility: hidden;
+  opacity: 0%;
+  transition: 0.5s;
+}
+
+#popup2.active {
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+#popup3 {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  padding: 50px;
+  box-shadow: 0 5px 30px rgba(0,0,0,.30);
+  background: #fff;
+  visibility: hidden;
+  opacity: 0%;
+  transition: 0.5s;
+}
+
+#popup3.active {
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.img-furn {
+  max-width: 20rem;
+  min-width: 15rem;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+
 .card-img-top {
   width: 100%;
   height: 20vw;
@@ -133,18 +236,16 @@ body {
 
 footer {
   background-color: #02000089;
-  position: fixed;
   width: 100%;
   padding: 20px;
-  margin-left: 15rem;
-  margin-right: 40px;
-  margin-top: 40rem;
+  padding-right: 20rem;
+  margin-top: 15px;
 }
 
-.container {
+.footer-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
@@ -206,6 +307,7 @@ footer {
 
   footer {
     margin-left: auto;
+
   }
   .main-wrap .home-cont {
     margin: auto;
@@ -213,6 +315,18 @@ footer {
 
   .main-wrap .home-cont .header {
     padding-right: 60px;
+  }
+  
+  .imgs-page {
+    display: flex;
+    align-items: space-between;
+    flex-direction: column;
+    background-color: aqua;
+    width: 700px;
+    padding-bottom: 20px;
+  }
+  .img-furn {
+    padding-top: 20px;
   }
 
   .main-wrap .home-cont .site-info {

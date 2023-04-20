@@ -88,18 +88,90 @@
       </header>
     </div>
     <div class="home-cont">
+      <!--Home Menu Icons-->
       <div class="hm-pg-icons">
         <a href="/login-page/index.html"><i class="fa-solid fa-user"></i></a>
         <a href="/check-out-page/index.html"><i class="fa-solid fa-cart-shopping"></i></a>
       </div>
-
+        
       <div class="header">Furniture</div>
-      <!--Home Menu Icons-->
+
+      <div class="imgs-page">
+        <div class="imgs-page" id="blur">
+          <div class="content">
+            <img class="img-furn" src="/assets/images/TB2.png" alt="">
+            <a class="img-a" href="#" onclick="toggle()">View Info</a>
+            <h5>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non sunt ipsam nemo eligendi quos dolores,
+              voluptatem obcaecati aliquam culpa sed amet dolore sapiente harum suscipit fugit tenetur adipisci minima
+              esse!
+            </h5> 
+          </div>
+        </div>
+
+        <div id="popup">
+          <h2>Lorem Text dolor sit 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur suscipit adipisci accusantium ducimus, minus explicabo officia reiciendis quibusdam non ipsum doloremque voluptatum veritatis voluptatem quidem quod quae at harum pariatur!
+          </p>
+          <a class="img-a" href="#" onclick="toggle()">Close</a>
+        </div>
+
+
+        <div class="imgs-page" id="blur">
+          <div class="content">
+            <img class="img-furn" src="/assets/images/TB2.png" alt="">
+            <a class="img-a" href="#popup" onclick="toggle()">View Info</a>
+            <h5>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non sunt ipsam nemo eligendi quos dolores,
+              voluptatem obcaecati aliquam culpa sed amet dolore sapiente harum suscipit fugit tenetur adipisci minima
+              esse!
+            </h5> 
+          </div>
+        </div>
+
+        <div id="popup2">
+          <h2>Lorem Text dolor sit 2</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur suscipit adipisci accusantium ducimus, minus explicabo officia reiciendis quibusdam non ipsum doloremque voluptatum veritatis voluptatem quidem quod quae at harum pariatur!
+          </p>
+          <a href="#" onclick="toggle()">Close</a>
+        </div>
       
-    </div>
-    <!--Footer for page-->
+
+        <div class="imgs-page" id="blur">
+          <div class="content">
+            <img class="img-furn" src="/assets/images/TB2.png" alt="">
+            <a class="img-a" href="#popup2" onclick="toggle()">View Info</a>
+            <h5>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non sunt ipsam nemo eligendi quos dolores,
+              voluptatem obcaecati aliquam culpa sed amet dolore sapiente harum suscipit fugit tenetur adipisci minima
+              esse!
+            </h5> 
+          </div>
+        </div>
+
+        <div id="popup3">
+          <h2>Lorem Text dolor sit 3</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur suscipit adipisci accusantium ducimus, minus explicabo officia reiciendis quibusdam non ipsum doloremque voluptatum veritatis voluptatem quidem quod quae at harum pariatur!
+          </p>
+          <a href="#popup3" onclick="toggle()">Close</a>
+              <!-- js for blur -->
+        <script type="text/javascript">
+          function toggle() {
+            var blur = document.getElementById("blur");
+            blur.classList.toggle('active');
+            var popup = document.getElementById("popup");
+            popup.classList.toggle('active');
+          }
+        </script>
+        </div>
+
+      </div>
+      <!--Footer for page-->
     <footer>
-      <div class="container">
+      <div class="footer-container">
         <div class="footer-links">
           <ul>
             <li><a href="/">Home</a></li>
@@ -122,7 +194,6 @@
         </div>
       </div>
     </footer>
-  </div>
   </div>
   </div>
 
