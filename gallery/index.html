@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en >
+<html lang="en">
 
 <head>
-  <meta charset=" UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<!--Main Stylesheet-->
-<link rel="stylesheet" href="/check-out-page/check-out.css" />
-<!--Bootstrap Link-->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
-<!--Font for Paris Font-->
-<link href="https://fonts.cdnfonts.com/css/futura-pt" rel="stylesheet">
-<!--Favicon-->
-<link rel="shortcut icon" href="/assets/images/KAlogo-01.png" type="image/x-icon">
-<script defer src="https://kit.fontawesome.com/708d681e86.js" crossorigin="anonymous"></script>
-<title>Kody's Attic</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--Bootstrap Link-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <!--Main Stylesheet-->
+  <link rel="stylesheet" href="/gallery/gallery.css" />
+  <!--Font for Paris Font-->
+  <link href="https://fonts.cdnfonts.com/css/futura-pt" rel="stylesheet">
+  <!--Favicon-->
+  <link rel="shortcut icon" href="/assets/images/KAlogo-01.png" type="image/x-icon">
+  <script defer src="https://kit.fontawesome.com/708d681e86.js" crossorigin="anonymous"></script>
+  <title>Kody's Attic</title>
 </head>
 
 <body>
@@ -24,7 +24,7 @@
     <div class="block">
       <header>
         <!--Logo-->
-        <img src="/assets/images/KAlogo-fff.png" alt="logo">
+        <img class="main-logo" src="/assets/images/KAlogo-fff.png" alt="logo">
         <!--Navigation Bar Bootstrap Desktop and Tablet-->
         <nav>
           <ul class="nav nav-pills flex-column">
@@ -53,7 +53,7 @@
               </a>
             </li>
             <li>
-              <a href="services/" class="nav-link text-light">
+              <a href="/services/" class="nav-link text-light">
                 <svg class="bi pe-none me-2" width="16" height="16">
                   <use xlink:href="#grid"></use>
                 </svg>
@@ -78,6 +78,7 @@
             </li>
           </ul>
         </nav>
+
         <!--Social Media Icons-->
         <div class="social-med">
           <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -89,41 +90,215 @@
     <div class="home-cont">
       <!--Home Menu Icons-->
       <div class="hm-pg-icons">
-        <a href="/check-out-page/index.html"><i class="fa-solid fa-cart-shopping"></i></a>
         <a href="/login-page/index.html"><i class="fa-solid fa-user"></i></a>
+        <a href="/check-out-page/index.html"><i class="fa-solid fa-cart-shopping"></i></a>
       </div>
+
+      <div class="layer"></div>
+
+      <div class="header">Gallery</div>
+      <h2>View our previous items </h2>
+
+      <div class="imgs-page">
+        <div class="imgs-page" id="blur">
+          <div class="content">
+            <img class="img-furn" src="/assets/images/CDCP.png" alt="black-dresser-painted-charcoal-color">
+            <a class="img-a" href="#" onclick="toggle()">View Info</a>
+            <h5>
+             Black Charcoal Dresser
+            </h5>
+          </div>
+        </div>
+
+        <div id="popup">
+          <h2>Lorem Text dolor sit main</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur suscipit adipisci accusantium ducimus,
+            minus explicabo officia reiciendis quibusdam non ipsum doloremque voluptatum veritatis voluptatem quidem
+            quod quae at harum pariatur!
+          </p>
+          <a class="img-a" href="#" onclick="toggle()">Close</a>
+        </div>
+
+        <!-- js for blur -->
+        <script type="text/javascript">
+          function toggle() {
+            var blur = document.getElementById("blur");
+            blur.classList.toggle('active');
+            var popup = document.getElementById("popup");
+            popup.classList.toggle('active');
+          }
+        </script>
+
+
+        <div class="imgs-page" id="blur">
+          <div class="content">
+            <img class="img-furn" src="/assets/images/BFP1.png" alt="Blue-Dresser-Paintedr">
+            <a class="img-a" href="#popup" onclick="toggle()">View Info</a>
+            <h5>
+              French Provincial Dresser
+            </h5>
+          </div>
+        </div>
+
+        <div id="popup">
+          <h2>Lorem Text dolor sit 2</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur suscipit adipisci accusantium ducimus,
+            minus explicabo officia reiciendis quibusdam non ipsum doloremque voluptatum veritatis voluptatem quidem
+            quod quae at harum pariatur!
+          </p>
+          <a href="#" onclick="toggle()">Close</a>
+
+        </div>
+
+
+        <div class="imgs-page" id="blur">
+          <div class="content">
+            <img class="img-furn" src="/assets/images/Cover Photo.png" alt="Gray-Wood-Dresser">
+            <a class="img-a" href="#popup2" onclick="toggle()">View Info</a>
+            <h5>
+              Handmade Dresser
+            </h5>
+          </div>
+        </div>
+
+        <div id="popup">
+          <h2>Lorem Text dolor sit 3</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur suscipit adipisci accusantium ducimus,
+            minus explicabo officia reiciendis quibusdam non ipsum doloremque voluptatum veritatis voluptatem quidem
+            quod quae at harum pariatur!
+          </p>
+          <a href="#popup" onclick="toggle()">Close</a>
+        </div>
+
+        <!-- js for blur -->
+        <script type="text/javascript">
+          function toggle() {
+            var blur = document.getElementById("blur");
+            blur.classList.toggle('active');
+            var popup = document.getElementById("popup");
+            popup.classList.toggle('active');
+          }
+        </script>
+
+
+      </div>
+
+      <div class="imgs-page">
+        <div class="imgs-page" id="blur">
+          <div class="content">
+            <img class="img-furn" src="/assets/images/Cover table.png" alt="black-antique-desk">
+            <a class="img-a" href="#" onclick="toggle()">View Info</a>
+            <h5>
+              60's Executive Desk
+            </h5>
+          </div>
+        </div>
+
+        <div id="popup">
+          <h2>Lorem Text dolor sit main</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur suscipit adipisci accusantium ducimus,
+            minus explicabo officia reiciendis quibusdam non ipsum doloremque voluptatum veritatis voluptatem quidem
+            quod quae at harum pariatur!
+          </p>
+          <a class="img-a" href="#" onclick="toggle()">Close</a>
+        </div>
+
+        <!-- js for blur -->
+        <script type="text/javascript">
+          function toggle() {
+            var blur = document.getElementById("blur");
+            blur.classList.toggle('active');
+            var popup = document.getElementById("popup");
+            popup.classList.toggle('active');
+          }
+        </script>
+
+
+        <div class="imgs-page" id="blur">
+          <div class="content">
+            <img class="img-furn" src="/assets/images/SD4.png" alt="Secretary Desk">
+            <a class="img-a" href="#popup" onclick="toggle()">View Info</a>
+            <h5>
+              1920's Secretary Desk
+            </h5>
+          </div>
+        </div>
+
+        <div id="popup">
+          <h2>Lorem Text dolor sit 2</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur suscipit adipisci accusantium ducimus,
+            minus explicabo officia reiciendis quibusdam non ipsum doloremque voluptatum veritatis voluptatem quidem
+            quod quae at harum pariatur!
+          </p>
+          <a href="#" onclick="toggle()">Close</a>
+
+        </div>
+
+
+        <div class="imgs-page" id="blur">
+          <div class="content">
+            <img class="img-furn" src="/assets/images/LT1.png" alt="end-table">
+            <a class="img-a" href="#popup2" onclick="toggle()">View Info</a>
+            <h5>
+              Lane Avenue End Table
+            </h5>
+          </div>
+        </div>
+
+        <div id="popup">
+          <h2>Lorem Text dolor sit 3</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur suscipit adipisci accusantium ducimus,
+            minus explicabo officia reiciendis quibusdam non ipsum doloremque voluptatum veritatis voluptatem quidem
+            quod quae at harum pariatur!
+          </p>
+          <a href="#popup" onclick="toggle()">Close</a>
+        </div>
+
+        <!-- js for blur -->
+        <script type="text/javascript">
+          function toggle() {
+            var blur = document.getElementById("blur");
+            blur.classList.toggle('active');
+            var popup = document.getElementById("popup");
+            popup.classList.toggle('active');
+          }
+        </script>
+
+
+      </div>
+
+      <!--Footer for page-->
+      <footer>
+        <div class="footer-container">
+          <div class="footer-links">
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/about/">About Us</a></li>
+              <li><a href="/furniture/">Furniture</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <ul>
+              <li><a href="/services/">Services</a></li>
+              <li><a href="/gallery/index.html">Gallery</a></li>
+              <li><a href="/contact/">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-logo">
+            <img src="/assets/images/KA-logo-wbg-iv.png" alt="kody-attic-logo">
+          </div>
+          <div class="footer-copyright">
+            <p>&copy; 2023 Kody's Attic</p>
+          </div>
+        </div>
+      </footer>
     </div>
-  </div>
-  </div>
-  </div>
-   <!--Footer for page-->
-   <footer>
-    <div class="container">
-      <div class="footer-links">
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about/">About Us</a></li>
-          <li><a href="/furniture/">Furniture</a></li>
-        </ul>
-      </div>
-      <div class="footer-links">
-        <ul>
-          <li><a href="/services/">Services</a></li>
-          <li><a href="/gallery/">Gallery</a></li>
-          <li><a href="/contact/">Contact Us</a></li>
-        </ul>
-      </div>
-      <div class="footer-logo">
-        <img src="/assets/images/KA-logo-wbg-iv.png" alt="kody-attic-logo">
-      </div>
-      <div class="footer-copyright">
-        <p>&copy; 2023 Kody's Attic</p>
-      </div>
-    </div>
-  </footer>
-    
-  </div>
-  </div>
   </div>
 
 </body>

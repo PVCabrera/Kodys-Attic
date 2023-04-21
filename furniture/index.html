@@ -93,8 +93,11 @@
         <a href="/login-page/index.html"><i class="fa-solid fa-user"></i></a>
         <a href="/check-out-page/index.html"><i class="fa-solid fa-cart-shopping"></i></a>
       </div>
+
+      <div class="layer"></div>
         
       <div class="header">Furniture</div>
+      <h2>Avaliable Pieces</h2>
 
       <div class="imgs-page">
         <div class="imgs-page" id="blur">
@@ -102,63 +105,21 @@
             <img class="img-furn" src="/assets/images/TB2.png" alt="">
             <a class="img-a" href="#" onclick="toggle()">View Info</a>
             <h5>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non sunt ipsam nemo eligendi quos dolores,
-              voluptatem obcaecati aliquam culpa sed amet dolore sapiente harum suscipit fugit tenetur adipisci minima
-              esse!
+              Black Walnut Wenchester Dresser
             </h5> 
           </div>
         </div>
 
         <div id="popup">
-          <h2>Lorem Text dolor sit 1</h2>
+          <h2>Lorem Text dolor sit main</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur suscipit adipisci accusantium ducimus, minus explicabo officia reiciendis quibusdam non ipsum doloremque voluptatum veritatis voluptatem quidem quod quae at harum pariatur!
           </p>
           <a class="img-a" href="#" onclick="toggle()">Close</a>
         </div>
 
-
-        <div class="imgs-page" id="blur">
-          <div class="content">
-            <img class="img-furn" src="/assets/images/TB2.png" alt="">
-            <a class="img-a" href="#popup" onclick="toggle()">View Info</a>
-            <h5>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non sunt ipsam nemo eligendi quos dolores,
-              voluptatem obcaecati aliquam culpa sed amet dolore sapiente harum suscipit fugit tenetur adipisci minima
-              esse!
-            </h5> 
-          </div>
-        </div>
-
-        <div id="popup2">
-          <h2>Lorem Text dolor sit 2</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur suscipit adipisci accusantium ducimus, minus explicabo officia reiciendis quibusdam non ipsum doloremque voluptatum veritatis voluptatem quidem quod quae at harum pariatur!
-          </p>
-          <a href="#" onclick="toggle()">Close</a>
-        </div>
-      
-
-        <div class="imgs-page" id="blur">
-          <div class="content">
-            <img class="img-furn" src="/assets/images/TB2.png" alt="">
-            <a class="img-a" href="#popup2" onclick="toggle()">View Info</a>
-            <h5>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non sunt ipsam nemo eligendi quos dolores,
-              voluptatem obcaecati aliquam culpa sed amet dolore sapiente harum suscipit fugit tenetur adipisci minima
-              esse!
-            </h5> 
-          </div>
-        </div>
-
-        <div id="popup3">
-          <h2>Lorem Text dolor sit 3</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur suscipit adipisci accusantium ducimus, minus explicabo officia reiciendis quibusdam non ipsum doloremque voluptatum veritatis voluptatem quidem quod quae at harum pariatur!
-          </p>
-          <a href="#popup3" onclick="toggle()">Close</a>
-              <!-- js for blur -->
-        <script type="text/javascript">
+         <!-- js for blur -->
+         <script type="text/javascript">
           function toggle() {
             var blur = document.getElementById("blur");
             blur.classList.toggle('active');
@@ -166,9 +127,59 @@
             popup.classList.toggle('active');
           }
         </script>
+
+
+        <div class="imgs-page" id="blur">
+          <div class="content">
+            <img class="img-furn" src="/assets/images/WD3.png" alt="">
+            <a class="img-a" href="#popup" onclick="toggle()">View Info</a>
+            <h5>
+             Antique White Dresser
+            </h5> 
+          </div>
         </div>
 
+        <div id="popup">
+          <h2>Lorem Text dolor sit 2</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur suscipit adipisci accusantium ducimus, minus explicabo officia reiciendis quibusdam non ipsum doloremque voluptatum veritatis voluptatem quidem quod quae at harum pariatur!
+          </p>
+          <a href="#" onclick="toggle()">Close</a>
+          
+        </div>
+         
+      
+        <div class="imgs-page" id="blur">
+          <div class="content">
+            <img class="img-furn" src="/assets/images/TT3.png" alt="">
+            <a class="img-a" href="#popup2" onclick="toggle()">View Info</a>
+            <h5>
+              Depression Era Dresser
+            </h5> 
+          </div>
+        </div>
+
+        <div id="popup">
+          <h2>Lorem Text dolor sit 3</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur suscipit adipisci accusantium ducimus, minus explicabo officia reiciendis quibusdam non ipsum doloremque voluptatum veritatis voluptatem quidem quod quae at harum pariatur!
+          </p>
+          <a href="#popup" onclick="toggle()">Close</a>
+        </div>
+              
+      <!-- js for blur -->
+      <script type="text/javascript">
+        function toggle() {
+          var blur = document.getElementById("blur");
+          blur.classList.toggle('active');
+          var popup = document.getElementById("popup");
+          popup.classList.toggle('active');
+        }
+      </script>
+
+
       </div>
+
       <!--Footer for page-->
     <footer>
       <div class="footer-container">

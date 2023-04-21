@@ -2,18 +2,20 @@
 <html lang="en">
 
 <head>
-  <meta charset=" UTF-8" />
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!--Main Stylesheet-->
-  <link rel="stylesheet" href="/check-out-page/check-out.css" />
   <!--Bootstrap Link-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <!--Main Stylesheet-->
+  <link rel="stylesheet" href="/about/about.css" />
   <!--Font for Paris Font-->
   <link href="https://fonts.cdnfonts.com/css/futura-pt" rel="stylesheet">
+  <link href="/assets/fonts/Poppins/Poppins-Regular.ttf" rel="stylesheet">
+  <link href="/assets/fonts/Rubik/static/Rubik-Regular.ttf" rel="stylesheet">
   <!--Favicon-->
-  <link rel="shortcut icon" href="/assets/images/KAlogo-01.png" type="image/x-icon">
+  <link rel="shortcut icon" href="/assets/images/KAlogo-text.png" type="image/x-icon">
   <script defer src="https://kit.fontawesome.com/708d681e86.js" crossorigin="anonymous"></script>
   <title>Kody's Attic</title>
 </head>
@@ -24,7 +26,7 @@
     <div class="block">
       <header>
         <!--Logo-->
-        <img src="/assets/images/KAlogo-fff.png" alt="logo">
+        <img class="main-logo" src="/assets/images/KAlogo-fff.png" alt="logo">
         <!--Navigation Bar Bootstrap Desktop and Tablet-->
         <nav>
           <ul class="nav nav-pills flex-column">
@@ -53,7 +55,7 @@
               </a>
             </li>
             <li>
-              <a href="services/" class="nav-link text-light">
+              <a href="/services/" class="nav-link text-light">
                 <svg class="bi pe-none me-2" width="16" height="16">
                   <use xlink:href="#grid"></use>
                 </svg>
@@ -78,6 +80,7 @@
             </li>
           </ul>
         </nav>
+
         <!--Social Media Icons-->
         <div class="social-med">
           <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -87,56 +90,102 @@
       </header>
     </div>
     <div class="home-cont">
-         <!--Home Menu Icons-->
-         <div class="hm-pg-icons">
-          <a href="/check-out-page/index.html"><i class="fa-solid fa-cart-shopping"></i></a>
-          <a href="/login-page/index.html"><i class="fa-solid fa-user"></i></a>
+      <!--Home Menu Icons-->
+      <div class="hm-pg-icons">
+        <a href="/login-page/index.html"><i class="fa-solid fa-user"></i></a>
+        <a href="/check-out-page/index.html"><i class="fa-solid fa-cart-shopping"></i></a>
+      </div>
+
+      <div class="layer"></div>
+
+      <div class="header">About Us</div>
+
+      <!-- About us page start -->
+
+      <div class="main-img">
+        <img class="main-img-ctrls" src="/assets/images/AboutUs.png" alt="">
+        <div class="au-txt-bg">
+          <p class="main-text">
+            <span class="k-letter">K</span>ody's Attic, named after our mascot and pet rabbit, is a small local business
+            started by a couple passionate
+            about furniture restoration. It all started with a shared love of everything vintage. We often collected
+            unique antique pieces for our home that we would also restore. Eventually, we ran out of space but still had
+            a
+            passion for antiques. So, we turned that passion into a small business where we could still find unique
+            antique furniture pieces others could enjoy in their homes.
+
+            Kody's Attic has something for everyone. Whether it is a simple coat of paint or a piece with a little more
+            decorative pazazz, we breathe new life into tired old antiques. Each piece we source has a unique history,
+            perfect for that conversation starter in your home. While we primarily concentrate on refinishing furniture,
+            we occasionally restore certain pieces. This depends on the condition and age of the piece. By purchasing
+            one
+            of our vintage pieces, you also can do your part for the environment by keeping them from landfills.
+          </p>
         </div>
       </div>
-      <!-- Meet the People -->
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-        role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
-        <title>Placeholder</title>
-        <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-      </svg>
-      <h2 class="fw-normal">Heading</h2>
-      <p>Some representative placeholder content for the three columns of text below the carousel. This is the first
-        column.</p>
-      <p><a class="btn btn-secondary" href="#">View details »</a></p>
-    </div>
-  </div>
-</div>
-</div>
 
-<!--Footer for page-->
-  <footer>
-    <div class="container">
-      <div class="footer-links">
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about/">About Us</a></li>
-          <li><a href="/furniture/">Furniture</a></li>
-        </ul>
+      <!-- Meet the Team -->
+      <div class="meet-txt">
+        <h1 class="meet-tit">Meet the team</h1>
       </div>
-      <div class="footer-links">
-        <ul>
-          <li><a href="/services/">Services</a></li>
-          <li><a href="/gallery/">Gallery</a></li>
-          <li><a href="/contact/">Contact Us</a></li>
-        </ul>
-      </div>
-      <div class="footer-logo">
-        <img src="/assets/images/KA-logo-wbg-iv.png" alt="kody-attic-logo">
-      </div>
-      <div class="footer-copyright">
-        <p>&copy; 2023 Kody's Attic</p>
-      </div>
-    </div>
-  </footer>
+      <!-- Circle Images -->
+      <div class="circle-img">
+        <div class="col-lg-4">
 
-  </div>
-  </div>
+          <img src="/assets/images/Paris-au.png" class="rounded-circle img-fluid" width="450" height="475"
+            alt="paris-image">
+          <h2 class="fw-normal">Paris</h2>
+          <p class="cir-txt">Meet Paris, a supportive partner who helped kickstart their girlfriend's furniture
+            business. [Your name] played a crucial role in the success of the business by using their creative eye to
+            stage and edit photos of the furniture pieces, making them look even more beautiful and inviting.
+
+            In addition to the photography, Paris took charge of running the social media accounts for the
+            business, posting regular updates and engaging with potential customers. With Paris' help, the
+            business quickly gained traction and began attracting more and more customers.</p>
+        </div>
+
+        <div class="col-lg-4">
+          <img src="/assets/images/about-us-shana.png" class="rounded-circle img-fluid" width="450" height="450"
+            alt="shana-image">
+          <h2 class="fw-normal">Shana</h2>
+          <p class="cir-txt">Meet Shana, a creative entrepreneur who started her own little furniture side business
+            during the Covid-19 pandemic. With a passion for upcycling and repurposing old furniture, Jane saw an
+            opportunity to turn her hobby into a small business that could help her stay afloat during uncertain times.
+
+            Using her garage as a workshop, Jane spent hours scouring thrift stores and garage sales for hidden
+            treasures that could be transformed into beautiful, one-of-a-kind pieces. She refurbished everything from
+            dressers and nightstands to coffee tables and chairs, and added her own unique touches with paint, fabric,
+            and hardware.</p>
+        </div>
+      </div>
+
+
+      <!--Footer for page-->
+      <footer>
+        <div class="footer-container">
+          <div class="footer-links">
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/about/">About Us</a></li>
+              <li><a href="/furniture/">Furniture</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <ul>
+              <li><a href="/services/">Services</a></li>
+              <li><a href="/gallery/index.html">Gallery</a></li>
+              <li><a href="/contact/">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-logo">
+            <img src="/assets/images/KA-logo-wbg-iv.png" alt="kody-attic-logo">
+          </div>
+          <div class="footer-copyright">
+            <p>&copy; 2023 Kody's Attic</p>
+          </div>
+        </div>
+      </footer>
+    </div>
   </div>
 
 </body>

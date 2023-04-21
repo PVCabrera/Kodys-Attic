@@ -1,12 +1,20 @@
+html {
+  height: 100%;
+}
 @font-face {
   font-family: "Futura PT";
   src: url("/assets/fonts/futura-pt-cdnfonts/FuturaCyrillicBook.ttf");
 
   font-family: "Open-Sans";
   src: url("/assets/fonts/OpenSans/OpenSans-Regular.ttf");
+  
+  font-family: "Rubik";
+  src: url("/assets/fonts/Rubik/static/Rubik-Regular.ttf");
+
+  
 }
 
-img {
+.main-logo {
   max-width: 100px;
   margin: 25px 25px;
 
@@ -14,10 +22,11 @@ img {
 
 body {
   background-color: rgb(2, 2, 23);
-  background-image: url(/assets/images/BFP3.png);
+  background-image: url(/assets/images/YT5.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  min-height: 100%;
 }
 
 .main-wrap {
@@ -67,47 +76,131 @@ body {
   border-top-left-radius: 5px;
 }
 
-.main-wrap .home-cont .main-ck-word {
-  display: flex;
-  margin-left: auto;
-  padding: 40px;
-  padding-left: 0px;
-  padding-top: 25px;
-  color: #fff;
-  font-family: "Futura PT";
-  font-size: 70px;
+/*Motto Text Orient.*/
+.main-wrap .home-cont {
+  width: 100%;
+  margin-left: 14rem;
+  padding-left: 15px;
+  margin-right: 0px;
 }
 
-/*Home Page Icons*/
+/*Home Page Icons controls*/
 .main-wrap .hm-pg-icons a {
-  display: flex;
-  display: inline;
   padding-right: 20px;
   margin-top: 15px;
   color: #fff
 }
-.home-cont{
-  margin-top: 20px;
-}
-
+/*Keeps icon's on top right*/
 .hm-pg-icons {
   display: flex;
   justify-content: flex-end;
 }
 
-footer {
-  background-color: #02000089;
-  position: fixed;
-  width: 100%;
-  padding: 20px;
-  margin-left: 15rem;
-  margin-right: 40px;
-  margin-top: 40rem;
+/*Motto Text CSS*/
+.main-wrap .home-cont .header {
+  display: flex;
+  padding: 40px;
+  padding-top: 0px;
+  color: #fff;
+  font-family: "Futura PT";
+  font-size: 70px;
 }
-.container {
+
+.main-img{
   display: flex;
   flex-wrap: wrap;
+  margin-right: ;
+}
+
+/* About Us Imag ctrls */
+.main-img-ctrls {
+  border-radius: 2rem;
+  max-width: 40rem;
+  width: 100%;
+  margin-left: 3rem;
+  flex-shrink: 0;
+  padding-bottom: 2rem;
+  padding-right: 3rem;
+}
+
+/* text-controls */
+.main-text{
+  max-width: 450px;
+  color: white;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  background-color: rgba(13, 3, 24, 0.721);
+  padding: 1rem;
+  padding-bottom: 25px;
+  border-radius: 20px;
+  font-size: medium;
+  font-family: "Open-Sans";
+}
+
+.k-letter {
+  font-size: 40px;
+  padding-right: .2rem;
+}
+
+.meet-tit{
+  font-family: 'Rubik';
+  font-weight: 600;
+  font-size: 4rem;
+}
+
+.meet-txt{
+  display: flex;
+  justify-content: center;
+  margin-top: 15rem;
+  margin-bottom: 10rem;
+  color: #fff;
+  font-family: 'Futura PT';
+  font-weight: 500;
+}
+
+.circle-img{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10rem;
   justify-content: space-around;
+}
+.rounded-circle {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 50%;
+  min-height: 300px;
+  margin-top: 25px;
+}
+
+.fw-normal {
+  color: #fff;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-family: 'Rubik'
+
+}
+
+.cir-txt {
+  color: #fff;
+  background-color: #00000080;
+  padding: 2rem;
+  border-radius: 20px;
+  margin-bottom: 6rem;
+}
+
+footer {
+  background-color: #02000089;
+  width: 100%;
+  padding: 20px;
+  padding-right: 20rem;
+  margin-top: 15px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
@@ -160,18 +253,26 @@ footer {
 /*Mobile Version*/
 @media screen and (max-width: 824px) {
   body {
-    max-width: fit-content;
     background-color: black;
   }
 
   .block {
     display: none;
   }
-  
-  footer{
-    margin-left: auto;
+
+  .main-wrap .home-cont {
+    padding-left: 0px;
   }
 
+  .home-cont .circle-img {
+    margin-left: 10px;
+
+  }
+
+  footer {
+    width: 100%;
+
+  }
   .main-wrap .home-cont {
     margin: auto;
   }
@@ -179,10 +280,24 @@ footer {
   .main-wrap .home-cont .header {
     padding-right: 60px;
   }
+  
+  .imgs-page {
+    display: flex;
+    align-items: space-between;
+    flex-direction: column;
+    width: 400px;
+    padding-bottom: 20px;
+    margin-right: 2rem;
+  
+  }
 
   .main-wrap .home-cont .site-info {
     display: flex;
-    margin-right: 30px;
+    margin-left: 0px;
+  }
+
+  .circle-img .rounded-circle{
+    margin-left: 5rem;
   }
 
   mob-nav {

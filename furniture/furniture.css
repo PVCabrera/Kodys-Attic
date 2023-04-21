@@ -95,18 +95,28 @@ body {
 .main-wrap .home-cont .header {
   display: flex;
   padding: 40px;
-  
   padding-top: 0px;
   color: #fff;
   font-family: "Futura PT";
+  font-weight: ;
   font-size: 70px;
 }
 
 
+h2 {
+  text-align: center;
+  margin: 2rem 2rem;
+  font-family: "Futura PT";
+  font-weight: 500;
+  color: #fff;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #fff;
+}
+
 .imgs-page {
   display: flex;
   justify-content: space-around;
-  background-color: aqua;
   padding: 30px;
   transition: .5s;
   padding: 20px;
@@ -117,6 +127,7 @@ body {
   pointer-events: none;
   user-select: none;
 }
+
 .imgs-page.content {
   position: relative;
   max-width: 800px;
@@ -124,7 +135,8 @@ body {
 h5 {
   font-weight: 600;
   margin-bottom: 10px;
-  color: #333;
+  color: #fbfbfb;
+  text-align: center;
 }
 
 .imgs-page.content img {
@@ -133,14 +145,16 @@ h5 {
 }
 
 .img-a {
+  display: flex;
   position:relative;
   padding: 5px 20px;
   display: block;
   margin: 5px 6rem 30px 6rem;
   text-align: center;
   text-decoration: none;
-  color: #fff;
-  background: #111;
+  background-color: #ffffff71;
+  color: #fcfcfc;
+  border-style: solid;
   border-radius:25px;
 }
 
@@ -159,48 +173,6 @@ h5 {
 }
 
 #popup.active {
-  top: 50%;
-  visibility: visible;
-  opacity: 1;
-  transition: 0.5s;
-}
-
-#popup2 {
-  position: fixed;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 600px;
-  padding: 50px;
-  box-shadow: 0 5px 30px rgba(0,0,0,.30);
-  background: #fff;
-  visibility: hidden;
-  opacity: 0%;
-  transition: 0.5s;
-}
-
-#popup2.active {
-  top: 50%;
-  visibility: visible;
-  opacity: 1;
-  transition: 0.5s;
-}
-
-#popup3 {
-  position: fixed;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 600px;
-  padding: 50px;
-  box-shadow: 0 5px 30px rgba(0,0,0,.30);
-  background: #fff;
-  visibility: hidden;
-  opacity: 0%;
-  transition: 0.5s;
-}
-
-#popup3.active {
   top: 50%;
   visibility: visible;
   opacity: 1;
@@ -321,17 +293,16 @@ footer {
     display: flex;
     align-items: space-between;
     flex-direction: column;
-    background-color: aqua;
-    width: 700px;
+    width: 400px;
     padding-bottom: 20px;
-  }
-  .img-furn {
-    padding-top: 20px;
+    margin-right: 2rem;
+  
   }
 
   .main-wrap .home-cont .site-info {
     display: flex;
-    margin-right: 30px;
+    margin-left: 0px;
+  
   }
 
   mob-nav {
