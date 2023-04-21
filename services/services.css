@@ -1,3 +1,8 @@
+html{
+  height: 100%;
+}
+
+
 @font-face {
   font-family: "Futura PT";
   src: url("/assets/fonts/futura-pt-cdnfonts/FuturaCyrillicBook.ttf");
@@ -18,6 +23,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  min-height: 100%;
 }
 
 .main-wrap {
@@ -67,9 +73,16 @@ body {
   border-top-left-radius: 5px;
 }
 
-.main-wrap .home-cont .main-ck-word {
+/*Motto Text Orient.*/
+.main-wrap .home-cont {
+  width: 100%;
+  margin-left: 3px;
+  padding-left: 15px;
+}
+
+/*Motto Text CSS*/
+.header {
   display: flex;
-  margin-left: auto;
   padding: 40px;
   padding-left: 0px;
   padding-top: 25px;
@@ -77,6 +90,7 @@ body {
   font-family: "Futura PT";
   font-size: 70px;
 }
+
 
 /*Home Page Icons*/
 .main-wrap .hm-pg-icons a {
@@ -86,19 +100,28 @@ body {
   margin-top: 15px;
   color: #fff
 }
+
+.home-cont .row {
+  margin-right: 20px;
+}
+ 
+
+.card-img-top {
+  width: 100%;  
+}
+
 footer {
   background-color: #02000089;
   padding: 20px;
   text-align: center;
-  margin-left: 15rem;
+  width: 100%;
 }
 
-.container {
+.footer-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -146,21 +169,19 @@ footer {
   color: #666;
 }
 
-/*Mobile Version*/
 @media screen and (max-width: 824px) {
   body {
-    max-width: fit-content;
     background-color: black;
   }
 
   .block {
     display: none;
   }
-  
-  footer{
-    margin-left: auto;
-  }
 
+  footer {
+    margin-left: auto;
+
+  }
   .main-wrap .home-cont {
     margin: auto;
   }
@@ -168,10 +189,21 @@ footer {
   .main-wrap .home-cont .header {
     padding-right: 60px;
   }
+  
+  .imgs-page {
+    display: flex;
+    align-items: space-between;
+    flex-direction: column;
+    width: 400px;
+    padding-bottom: 20px;
+    margin-right: 2rem;
+  
+  }
 
   .main-wrap .home-cont .site-info {
     display: flex;
-    margin-right: 30px;
+    margin-left: 0px;
+  
   }
 
   mob-nav {

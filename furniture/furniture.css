@@ -17,7 +17,7 @@ html {
 
 body {
   background-color: rgb(2, 2, 23);
-  background-image: url(/assets/images/BFP3.png);
+  background-image: url(/assets/images/homepage-resized.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -98,7 +98,6 @@ body {
   padding-top: 0px;
   color: #fff;
   font-family: "Futura PT";
-  font-weight: ;
   font-size: 70px;
 }
 
@@ -208,12 +207,10 @@ h5 {
 
 footer {
   background-color: #02000089;
-  width: 100%;
+  text-align: center;
+  position: relative;
   padding: 20px;
-  padding-right: 20rem;
-  margin-top: 15px;
 }
-
 .footer-container {
   display: flex;
   flex-wrap: wrap;
@@ -247,7 +244,7 @@ footer {
 .footer-links a {
   color: #ffffff;
   text-decoration: none;
-  font-family: "Open-Sans";
+  font-family: "Futura";
 }
 
 .footer-logo {

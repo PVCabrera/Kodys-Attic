@@ -10,8 +10,12 @@ html {
   
   font-family: "Rubik";
   src: url("/assets/fonts/Rubik/static/Rubik-Regular.ttf");
-
   
+  font-family: "Poppins";
+  src: url("/assets/fonts/Poppins/Poppins-Regular.ttf");
+  
+  font-family: "Lora";
+  src: url("/assets/fonts/Lora/static/Lora-Regular.ttf");  
 }
 
 .main-logo {
@@ -22,7 +26,7 @@ html {
 
 body {
   background-color: rgb(2, 2, 23);
-  background-image: url(/assets/images/YT5.png);
+  background-image: url(/assets/images/yellow-tables-resized.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -109,32 +113,37 @@ body {
 .main-img{
   display: flex;
   flex-wrap: wrap;
-  margin-right: ;
 }
 
 /* About Us Imag ctrls */
 .main-img-ctrls {
-  border-radius: 2rem;
+  border-radius: 20px;
   max-width: 40rem;
   width: 100%;
   margin-left: 3rem;
   flex-shrink: 0;
-  padding-bottom: 2rem;
-  padding-right: 3rem;
+  margin-bottom: 2rem;
+  
 }
 
 /* text-controls */
-.main-text{
+.main-text {
   max-width: 450px;
+  font-family: "Lora";
+  line-height: 1.6em;
   color: white;
+  margin-top: 13rem;
   margin-left: 2rem;
   margin-right: 2rem;
-  background-color: rgba(13, 3, 24, 0.721);
+  background-color: rgba(0, 0, 0, 0.662);
   padding: 1rem;
   padding-bottom: 25px;
   border-radius: 20px;
-  font-size: medium;
-  font-family: "Open-Sans";
+}
+
+.green {
+  color: green;
+  font-size: large;
 }
 
 .k-letter {
@@ -142,9 +151,18 @@ body {
   padding-right: .2rem;
 }
 
-.meet-tit{
-  font-family: 'Rubik';
-  font-weight: 600;
+.line {
+  width: 90%;
+  height: 5px;
+  border-top: 5px solid white;
+  background-color: #ffffff;
+  margin-left: 3rem;
+  margin-top: 4rem;
+
+}
+
+.meet-tit {
+  font-family: 'Poppins';
   font-size: 4rem;
 }
 
@@ -154,14 +172,12 @@ body {
   margin-top: 15rem;
   margin-bottom: 10rem;
   color: #fff;
-  font-family: 'Futura PT';
   font-weight: 500;
 }
 
 .circle-img{
   display: flex;
   flex-wrap: wrap;
-  margin-left: 10rem;
   justify-content: space-around;
 }
 .rounded-circle {
@@ -177,7 +193,7 @@ body {
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  font-family: 'Rubik'
+  font-family:'Futura'
 
 }
 
@@ -230,7 +246,7 @@ footer {
 .footer-links a {
   color: #ffffff;
   text-decoration: none;
-  font-family: "Open-Sans";
+  font-family: "Lora";
 }
 
 .footer-logo {
@@ -266,7 +282,11 @@ footer {
 
   .home-cont .circle-img {
     margin-left: 10px;
+  }
 
+  .rounded-circle {
+    margin-right: 2rem;
+    margin-left: 0;
   }
 
   footer {

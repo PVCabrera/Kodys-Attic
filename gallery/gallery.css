@@ -17,7 +17,7 @@ html {
 
 body {
   background-color: rgb(2, 2, 23);
-  background-image: url(/assets/images/BFP3.png);
+  background-image: url(/assets/images/homepage-resized.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -246,7 +246,7 @@ footer {
 .footer-links a {
   color: #ffffff;
   text-decoration: none;
-  font-family: "Open-Sans";
+  font-family: "Futura";
 }
 
 .footer-logo {

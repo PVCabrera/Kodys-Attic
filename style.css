@@ -4,7 +4,17 @@
 
   font-family: "Open-Sans";
   src: url("/assets/fonts/OpenSans/OpenSans-Regular.ttf");
+
+  font-family: "Rubik";
+  src: url("/assets/fonts/Rubik/static/Rubik-Regular.ttf");
+  
+  font-family: "Poppins";
+  src: url("/assets/fonts/Poppins/Poppins-Regular.ttf");
+  
+  font-family: "Lora";
+  src: url("/assets/fonts/Lora/static/Lora-Regular.ttf");  
 }
+
 
 .main-logo {
   max-width: 100px;
@@ -14,7 +24,7 @@
 
 body {
   background-color: rgb(2, 2, 23);
-  background-image: url(assets/images/BFP3.png);
+  background-image: url(assets/images/homepage-resized.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -25,6 +35,11 @@ body {
   display: flex;
   position: relative;
 }
+
+/* .mobile-nav .navbar .nav-in .navbar-light .bg-light {
+  display: none !important;
+  visibility: hidden !important;
+} */
 
 /*Change Text font*/
 .main-wrap .block {
@@ -75,6 +90,21 @@ body {
   padding-left: 15px;
 }
 
+.home-intro {
+  color: #fff;
+  font-family: "Lora";
+  font-weight: 400;
+  margin-top: 4rem;
+  font-size: x-large;
+  line-height: 2.4rem;
+  margin-right: 2rem;
+}
+
+.btn{
+  margin-top: 1rem;
+  padding-top: 0%;
+}
+
 /*Home Page Icons*/
 .main-wrap .hm-pg-icons a {
   display: flex;
@@ -107,16 +137,45 @@ body {
   background-color: #e8e0e0;
 }
 
-h2{
-  margin-top: 50rem;
+.featured-txt {
+  margin-top: 35rem;
+  font-family: "Lora";
+  margin-left: 29rem;
+  color: #fff;
+  font-size: 40px;
+  margin-bottom: 5rem;
 }
 
-.main-wrap .home-cont .k-letter {
-  font-size: 60px;
-  color: rgb(106, 122, 122);
-  line-height: 0%;
-  padding-right: 5px;
+.circle-img{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
+.rounded-circle {
+  object-fit: cover;
+  max-height: 300px;
+  margin-top: 25px;
+}
+
+.fw-normal {
+  color: #fff;
+  text-align: center;
+  margin-right: 6rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-family: 'Poppins'
+
+}
+
+.cir-txt {
+  color: #fff;
+  background-color: #00000080;
+  padding: 2rem;
+  border-radius: 20px;
+  margin-bottom: 6rem;
+  margin-right: 5rem;
+}
+
 
 footer {
   background-color: #02000089;
@@ -159,7 +218,7 @@ footer {
 .footer-links a {
   color: #ffffff;
   text-decoration: none;
-  font-family: "Open-Sans";
+  font-family: "Futura";
 }
 
 .footer-logo {
@@ -190,6 +249,10 @@ footer {
     display: none;
   }
 
+  .mobile-nav {
+    display: contents;
+  }
+
   footer {
     margin-left: auto;
     margin-top: auto;
@@ -206,6 +269,14 @@ footer {
   .main-wrap .home-cont .site-info {
     display: flex;
     margin-right: 30px;
+  }
+
+  .featured-txt {
+    margin-right: 3rem;
+  }
+
+  .circle-img{
+    margin-left: 4rem;;
   }
 
   mob-nav {
