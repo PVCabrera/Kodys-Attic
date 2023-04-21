@@ -78,15 +78,34 @@ body {
   font-size: 70px;
 }
 
-/*Home Page Icons*/
+/*Home Page Icons controls*/
 .main-wrap .hm-pg-icons a {
-  display: flex;
-  display: inline-block;
-  float: right;
   padding-right: 20px;
   margin-top: 15px;
   color: #fff
 }
+/*Keeps icon's on top right*/
+.hm-pg-icons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-wrap .home-cont .header {
+  display: flex;
+  padding: 40px;
+  padding-left: 0px;
+  padding-top: 25px;
+  color: #fff;
+  font-family: "Futura PT";
+  font-size: 70px;
+}
+
+form.form-group {
+  margin-right: 5rem;
+  padding-bottom: 10px;
+}
+
+
 footer {
   background-color: #02000089;
   padding: 20px;
