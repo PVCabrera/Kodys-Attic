@@ -90,8 +90,7 @@ body {
 form {
   min-width: 200px;
   margin-right:30rem;
-  padding-bottom: 4rem;;
-
+  padding-bottom: 4rem;
 }
 
 .form-control {
@@ -100,11 +99,11 @@ form {
 }
 
 footer {
+  margin-left:15rem; ;
   background-color: #02000089;
   padding: 20px;
   text-align: center;
-  margin-left: 15rem;
-  margin-top: auto;
+  width: 100%;
 }
 
 .container {

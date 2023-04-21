@@ -187,18 +187,16 @@ h5 {
 }
 
 
-
 .card {
   object-fit: cover;
   display: flex;
   justify-content: space-between;
   margin-left: 5rem;
-  padding: 0%;
   margin-bottom: 2rem;  
 }
 .card-img-top {
-  width: 6rem;
   height: 20vw;
+  padding: 0%;
   object-fit: cover;
 }
 
