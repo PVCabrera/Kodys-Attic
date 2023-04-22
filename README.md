@@ -15,6 +15,7 @@ capstone-project for an ecommerce site
 ![gallery](./screenshots/gallery.png)
 ![login-page](./screenshots/login-pg.png)
 ![checkout](./screenshots/checkout.png)
+![Contact Us](./screenshots/contact-us.png)
 
 
 
