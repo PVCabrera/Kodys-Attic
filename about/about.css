@@ -70,7 +70,6 @@ body {
 .main-wrap .block .social-med a {
   display: block;
   width: 40px;
-  background-color: none;
   height: 40px;
   line-height: 40px;
   text-align: center;
@@ -303,7 +302,6 @@ footer {
   
   .imgs-page {
     display: flex;
-    align-items: space-between;
     flex-direction: column;
     width: 400px;
     padding-bottom: 20px;
